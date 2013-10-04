@@ -41,12 +41,11 @@ BOARD_FLASH_BLOCK_SIZE := 25600
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
-#BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # default props
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=1
 ADDITIONAL_DEFAULT_PROPERTIES += ro.debuggable=1
 ADDITIONAL_DEFAULT_PROPERTIES += persist.service.adb.enable=1
 ADDITIONAL_DEFAULT_PROPERTIES += ro.config.sec_storage=1
