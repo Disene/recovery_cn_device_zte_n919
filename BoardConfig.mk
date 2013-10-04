@@ -42,7 +42,6 @@ BOARD_FLASH_BLOCK_SIZE := 25600
 BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_RECOVERY_INITRC := device/zte/n919/init.rc
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 # default props
@@ -55,25 +54,13 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.sys.usb.config=mass_storage,adb
 
 # USB Mounting
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
-#TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/android_usb/android0/f_mass_storage/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/android_usb/android0/f_mass_storage/lun%d/file"
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun%d/file"
-TARGET_RECOVERY_INITRC := device/zte/n919/recovery.rc
+TARGET_RECOVERY_INITRC := device/zte/n919/init.rc
 BOARD_VOLD_MAX_PARTITIONS := 20
 
-TARGET_CORTEX_CACHE_LINE_32 := true
-TW_INTERNAL_STORAGE_PATH := "/sdcard1"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard1"
+TW_INTERNAL_STORAGE_PATH := "/emmc"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
 TW_EXTERNAL_STORAGE_PATH := "/sdcard"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
-BOARD_DATA_DEVICE := /dev/block/mmcblk0p13
-BOARD_DATA_FILESYSTEM := ext4
-BOARD_DATA_FILESYSTEM_OPTIONS := rw
-BOARD_SYSTEM_DEVICE := /dev/block/mmcblk0p12
-BOARD_SYSTEM_FILESYSTEM := ext4
-BOARD_SYSTEM_FILESYSTEM_OPTIONS := rw
-BOARD_CACHE_DEVICE := /dev/block/mmcblk0p15
-BOARD_CACHE_FILESYSTEM := ext4
-BOARD_CACHE_FILESYSTEM_OPTIONS := rw
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-#TW_FLASH_FROM_STORAGE := true
-#TW_HAS_REBOOT_BOOTLOADER := true
