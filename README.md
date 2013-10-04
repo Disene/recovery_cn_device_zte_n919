@@ -9,7 +9,7 @@ Method:
 
 . build/envsetup.sh
 
-lunch full_n919-eng
+lunch cm_n919-eng
 
 make -j32 recoveryimage
 
@@ -17,15 +17,15 @@ Disene's BLOG: http://disene-blog.com.nu
 
 ---------------------------------------------------
 
-ÖĞÎÄ»Ö¸´ÏµÍ³µÄdevice£¬N919×¨ÓÃÅäÖÃ£¬ By °²ÖÇ ÆÆÏş-Disene
+ä¸­æ–‡æ¢å¤ç³»ç»Ÿçš„deviceï¼ŒN919ä¸“ç”¨é…ç½®ï¼Œ By å®‰æ™º ç ´æ™“-Disene
 
-Í¬²½µ½Ä¿Â¼device/zte/n919 ¼´¿É£¬Í¬Ê±ĞèÒªÍ¬²½android_bootable_recovery_cn
+åŒæ­¥åˆ°ç›®å½•device/zte/n919 å³å¯ï¼ŒåŒæ—¶éœ€è¦åŒæ­¥android_bootable_recovery_cn
 
-·½·¨£º
+æ–¹æ³•ï¼š
 
 . build/envsetup.sh
 
-lunch full_n919-eng
+lunch cm_n919-eng
 
 make -j32 recoveryimage
 
